@@ -2,67 +2,62 @@
   box-sizing: border-box;
 }
 
-#target {
-  background-color: rgb(255, 225, 240);
-  height: 100%;
-  width: 100%;
-  margin: 0;
+body {
+  background-color : rgb(255, 225, 240);
+  height           : 100%;
+  margin           : 0;
+  width            : 100%;
 }
-
 .main-box {
-  background-color: greenyellow;
-  height: 90%;
-  width: 700px;
-  max-width: 750px;
+  background-color : white;
+  border-radius    : 10px 0 0 10px;
+  height           : 100%;
+  margin           : 30px 0 30px 20px;
+  max-width        : 700px;
+  padding          : 15px 0px;
+  width            : 700px;
 }
 
-.main-box__top {
 
-}
-
+/* ad- 〜 adventureラベルまで  */
 .main-box__top__fist-character {
-  display: flex;
-  height: 80px;
+  display          : flex;
+  height           : 80px;
 }
-
 .main-box__top__fist-character__icon {
-  position:relative;
-  top: 10px;
-  left: 10px;
+  left             : 10px;
+  position         :relative;
+  top              : 10px;
 }
 .icon{
-  width:70px;
-  border: 2px solid rgb(253, 40, 157);
-  border-radius: 100vw;
-  
-  position: absolute;
+  border           : 2px solid rgb(255, 40, 160);
+  border-radius    : 100vw;
+  width            :70px;
 }
-
 .main-box__top__first-character__word{
-  position: absolute;
-  left:75px;
-  top:-5px;
-  font-size: 70px;
-  color: gray;
-  font-family: 'arial unicode ms';
-  font-weight: 900;
-  transform: scale(0.8, 1);
+  padding-left     : 10px;
+  font-size        : 70px;
+  color            : gray;
+  font-family      : 'arial unicode ms';
+  font-weight      : 900;
+  transform        : scale(0.8, 1);
+  line-height      : 80px;
 }
 
 .main-box__explanation{
-  padding: 0 80px;
+  padding          : 5px 70px 0 70px;
 }
 
 .main-box__explanation__title{
-  color:red;
-  font-size: 24px;
-  font-weight: 600;
+  color            :rgb(255, 0, 130);
+  font-size        : 22px;
+  font-weight      : 600;
 }
 
 .main-box__explanation__mean{
   padding: 0 10px;
-  /* letter-spacing: 0.1em; */
   line-height: 1.2em;
+  font-size: 16px;
 }
 
 
@@ -114,21 +109,20 @@
 
 .main-box__word-adventure__image-box__explanation{
   text-align: center;
+  font-size: 13.5px;
 }
 .main-box__word-adventure__image-box__explanation-mean{
   text-align: center;
+  font-size: 13.5px;
 }
 .main-box__word-adventure__image-box__explanation-mean b{
-  color: red;
+  color: rgb(255, 0, 130);
   /* padding-right: 10px; */
-  font-size: 18px;
+  font-size: 15px;
 }
 
-.red-word{
-
-}
 .name-icon{
-  width: 22px;
+  width: 18px;
   top:4px;
   position: relative;
   margin: 0 5px 0 20px;
@@ -141,19 +135,20 @@
 
 
 .main-box__word-adventure__memo-box{
-  padding-left: 30px;
+  padding: 0 70px 20px 30px;
   position: relative;
   top: -10px;
+  /* border-bottom: dashed 3px #87CEFA; */
 
 }
 .main-box__word-adventure__memo-box__title{
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   /* background-color: red; */
   display: inline-block;
   width: 112px;
   height: 30px;
-  background-color: red;
+  background-color: rgb(255, 170, 225);
   position: relative;
   border-radius: 5px 4px 0px 0px;
   padding: 0 8px 0 15px;
@@ -162,9 +157,28 @@
   content: "";
   position:absolute;
   border-style: solid;
-  border-color: transparent transparent red red;
+  border-color: transparent transparent rgb(255, 170, 225) rgb(255, 170, 225);
   border-width: 15px 8px 15px 8px;
   /* padding-left: 10px; */
   left: 110px;
   /* border-radius: 10px 10px 0px 0px; */
+}
+
+.main-box__word-adventure__memo-box__explanation {
+  background-color: rgb(235, 235, 235);
+  padding:10px;
+  height: 70px;
+  /* position: relative; */
+  
+}
+.main-box__word-adventure__memo-box__explanation::after {
+  position: relative;
+  content: " ";
+  display: block;
+  /* border-bottom: solid 3px skyblue; */
+  border-bottom: dashed 2px rgb(200, 200, 200);
+  bottom: -15px;
+  right: 10px;
+  width: 100%;
+  padding:10px;
 }
